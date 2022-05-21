@@ -1,3 +1,4 @@
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -5,6 +6,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+
 
 int main() 
 {
@@ -17,13 +19,13 @@ int main()
         cin>>arr[i];
     }
     for(int i = 0; i < num_of_leftrotation; i++){  
-        int j, first;  
-        first = arr[0];  
+        int j;  
+        arr[num_of_integer+1] = arr[0];  
       
         for(j = 0; j < num_of_integer-1; j++){  
             arr[j] = arr[j+1];  
         } 
-        arr[j] = first;  
+        arr[j] = arr[num_of_integer+1];  
     }
     for(int k=0;k<num_of_integer;k++)
     {
